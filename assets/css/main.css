@@ -274,14 +274,14 @@ sup {
 }
 
 a {
-    color: #3176d9;
+    color: {{site.color}}
     text-decoration: none;
     background-color: transparent;
     -webkit-text-decoration-skip: objects
 }
 
 a:hover {
-    color: #1e53a0;
+    color: red;
     text-decoration: none
 }
 
@@ -5355,7 +5355,8 @@ input[type=button].btn-block {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, .75)
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
@@ -7468,7 +7469,7 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-    background-color: #403f4c!important
+    background-color: #000000!important
 }
 
 a.bg-dark:hover,
@@ -9382,7 +9383,7 @@ button.bg-dark:focus {
 
 .pt-5,
 .py-5 {
-    padding-top: 3rem!important
+    padding-top: 0.5rem!important
 }
 
 .pr-5,
@@ -9392,7 +9393,7 @@ button.bg-dark:focus {
 
 .pb-5,
 .py-5 {
-    padding-bottom: 3rem!important
+    padding-bottom: 0.5rem!important
 }
 
 .pl-5,
@@ -18575,7 +18576,7 @@ html body .md-typeset .headerlink {
 }
 
 footer {
-    min-height: 150px
+    /* min-height: 150px */
 }
 
 @media(max-width:991.98px) {
@@ -18614,5 +18615,5 @@ footer {
         margin-top: 30px;
         margin-bottom: 30px;
     }
-    
+
 }

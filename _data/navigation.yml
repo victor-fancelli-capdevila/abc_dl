@@ -1,4 +1,12 @@
+- title: Course
+  url: course
+  title_de: Kurs
+- title: "Documentation"
+  url: docs
+  title_de: "Dokumentation"
+- title: "HfG Inftrastructure"
+  url: hfg
+  title_de: HfG Infrastruktur
 - title: About
   url: about
-- title: Documentation
-  url: docs
+  title_de: Über

@@ -1,13 +1,13 @@
 <header>
-  <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
-    <a class="navbar-brand" href="{{ site.baseurl }}/">
-        <span class="text-uppercase font-weight-bold">{{ site.title }}</span>
-    </a>
+        <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="{{ site.baseurl }}/">
+            <span class="text-uppercase font-weight-bold">{{ site.title }}</span>
+	</a>
   <!-- Links from navigation (Courses, Documetnation) -->
   <div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
 		<ul class="navbar-nav mt-2 mt-lg-0">{% for link in site.data.navigation %}
 			<li class="nav-item mr-4 mb-2 mb-lg-0">
-                            <a class="nav-link" href="{% if link.url %}{{ site.baseurl }}/{{ link.url }}{% else %}{{ link.external_url }}{% endif %}" ><span>{{ link.title }}</span></a>
+                            <a class="nav-link" href="{% if link.url %}{{ site.baseurl }}/{{ link.url }}{% else %}{{ link.external_url }}{% endif %}" ><span>{{ link.title_de }}</span></a>
 			</li>{% endfor %}
       <!-- Versions (deactivated)
       {% if site.version_params.versioning == true %}
@@ -43,9 +43,9 @@
 	<div class="navbar-nav d-none d-lg-block">
  <input type="search" class="form-control td-search-input" placeholder="&#xf002" aria-label="Search" autocomplete="off">
         </div>-->
-    <div class="td-navbar-nav-scroll ml-md-auto">
-        <ul class="navbar-nav mt-2 mt-lg-0">
-          <li class="nav-item mr-4 mb-2 mb-lg-0"><a class="nav-link" href="{{site.baseurl}}/de">DE</a></li>
+    <div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+    		<ul class="navbar-nav mt-2 mt-lg-0">
+          <li class="nav-item mr-4 mb-2 mb-lg-0"><a class="nav-link"><span>EN</span></a></li>
         </ul>
     </div>
 

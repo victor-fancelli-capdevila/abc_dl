@@ -3,19 +3,25 @@
     <div class="row">
       <div class="col-6 col-sm-4 text-xs-center order-sm-2">
       </div>
+
       <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
         <ul class="list-inline mb-0">
+        <li>{% if site.privacy %}<p><a href="{{ site.privacy }}" target="_blank">Imprint</a></p>{% endif %}</li>
+        <!-- Github figure (deactivated)
           <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="" aria-label="GitHub" data-original-title="GitHub">
             <a class="text-white" target="_blank" href="{{ site.repo }}">
               <i class="fab fa-github"></i>
             </a>
           </li>
+          -->
         </ul>
       </div>
+
       <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
-        <small class="text-white">© {{ 'now' | date: "%Y" }} {{ site.author }} All Rights Reserved</small>
-        {% if site.privacy %}<small class="ml-1"><a href="{{ site.privacy }}" target="_blank">Privacy Policy</a></small>{% endif %}
-        <p class="mt-2"><a href="/about/">About Docsy</a></p>
+         <small class="text-white"><p>This work is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0</p>
+           <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></small>
+
+
       </div>
     </div>
   </div>

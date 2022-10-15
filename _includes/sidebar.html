@@ -1,11 +1,11 @@
 <div id="td-sidebar-menu" class="td-sidebar__inner">
-  
+
   <form class="td-sidebar__search d-flex align-items-center">
-    <input type="search" class="form-control td-search-input" placeholder="&#xf002 Search this site…" aria-label="Search this site…" autocomplete="off">
+    <input type="search" class="form-control td-search-input" placeholder="&#xf002" aria-label="site…" autocomplete="off">
       <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
       </button>
-  </form>  
-  
+  </form>
+
   <nav class="collapse td-sidebar-nav pt-2 pl-4" id="td-section-nav">
     {% if site.version_params.versioning == true %}
       {% if site.data.toc-mapping contains currentpageversion %}
@@ -16,7 +16,7 @@
     {% else %}
       {% assign tocfilename = "toc" %}
     {% endif %}
-    
+
     {% comment %}
      Previous toc versions are held in a version subdirectory which can be user configured
     {% endcomment %}
@@ -25,25 +25,26 @@
     {% else %}
       {% assign tocdata = site.data.[site.version_params.tocversion_dir][tocfilename] %}
     {% endif %}
-    
+
     {% for section in tocdata %}
       <ul class="td-sidebar-nav__section pr-md-3">
-        {% capture sectionUrl %} 
-          {{ section.url | replace: "/", "" }} 
+        {% capture sectionUrl %}
+          {{ section.url | replace: "/", "" }}
         {% endcapture %}
-        {% capture pageUrl %} 
-          {{ page.url | replace: "/", "" }} 
+        {% capture pageUrl %}
+          {{ page.url | replace: "/", "" }}
         {% endcapture %}
-      
+
         {% if currentpageversion == site.version_params.latest %}
           {% assign versionlink = 'docs'  %}
         {% else %}
           {% assign versionlink = 'docs/' | append: site.version_params.version_dir | append: '/' | append: currentpageversion  %}
         {% endif %}
-        
+
         <li class="td-sidebar-nav__section-title">
           <a  href="{% if section.url %}{{ site.baseurl }}/{{ section.url | replace: 'docs', versionlink }}{% else %}{{ section.external_url }}{% endif %}" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">{{ section.title }}</a>
         </li>
+
         {% if section.links %}
           <ul>
             <li class="collapse show" id="{{ section.title | slugify }}">
@@ -58,16 +59,16 @@
                   {% else %}
                     {% assign versionlink = 'docs'  %}
                   {% endif %}
-                  
-                  {% capture fullentryurl %} 
-                    {{- "/" | append: entry.url | replace: 'docs', versionlink -}} 
+
+                  {% capture fullentryurl %}
+                    {{- "/" | append: entry.url | replace: 'docs', versionlink -}}
                   {% endcapture %}
                   <li class="td-sidebar-nav__section-title">
                     <a href="{% if entry.url %}
                                 {{ site.baseurl }}/{{ entry.url | replace: 'docs', versionlink}}
                              {% else %}
                                 {{ entry.external_url }}
-                             {% endif %}" 
+                             {% endif %}"
                        class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section {% if page.url == fullentryurl | strip %}active{% endif %}">{{ entry.title }}
                     </a>
                   </li>

@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-tags: 
+tags:
  - jekyll
  - github
 description: Getting started with Docsy Jekyll
@@ -14,7 +14,7 @@ description: Getting started with Docsy Jekyll
 
 
 On the right side of any page, you'll notice links to edit the page, or
-open an issue. This ensures that any time you have a question or want to 
+open an issue. This ensures that any time you have a question or want to
 suggest or request a change, you can do so immediately and link directly
 to the section of interest. The sections on the page also have permalinks so
 you can link directly to them.
@@ -40,14 +40,14 @@ but should not be included in search.
 
 If you have an external site with a search GET endpoint (meaning one that ends
 in `?q=<term>`, then you can automatically link page tags to search this endpoint.
-For example, on an HPC site I'd want a tag like "mpi" to do a search on 
+For example, on an HPC site I'd want a tag like "mpi" to do a search on
 [http://ask.cyberinfrastructure.org](http://ask.cyberinfrastructure.org) for mpi.
 See the [tags](#tags) section below for how to configure this.
 
 ### Documentation
 
 Documentation pages should be written in the `docs` folder of the repository,
-and you are allowed to use whatever level of nesting (subfolders) that 
+and you are allowed to use whatever level of nesting (subfolders) that
 works for you! It's a Jekyll [collection](https://jekyllrb.com/docs/collections/), which means that you
 can add other content (images, scripts) and it will be included for linking to.
 To create subfolders with files, you can simply create new markdon files. For example:
@@ -97,7 +97,7 @@ or just put the relative path:
 {% raw %}[Here](example-page){% endraw %}
 ```
 
-or better, there is a shortand trick! We can use the provided "includes" 
+or better, there is a shortand trick! We can use the provided "includes"
 template to do the same based on the path to create a link:
 
 ```
@@ -113,7 +113,7 @@ feed.xml) and documentation pages.
 
 ### Navigation
 
-Whether you place your page under "pages" or "docs," for those pages that you want added to the navigation, 
+Whether you place your page under "pages" or "docs," for those pages that you want added to the navigation,
 you should add them to `_data/toc.yml`. If you've defined a `permalink` in the
 front end matter, you can use that (e.g., "About" below). If you haven't and
 want to link to docs, the url is the path starting with the docs folder.
@@ -137,8 +137,6 @@ Here is an example (currently the active example):
       children:
         - title: Quizzes
           url: "docs/extras/example-quiz"
-    - title: "About"
-      url: "about"
     - title: "News"
       url: "news
 ```
@@ -228,7 +226,7 @@ Just for fun, here are all the types:
 
 ### Quotes
 
-You can include block quotes to emphasize text. 
+You can include block quotes to emphasize text.
 
 > Here is an example. Isn't this much more prominent to the user?
 
@@ -353,7 +351,7 @@ Most are documented there, and please [open an issue](https://www.github.com/{{ 
 
 #### Adding pages
 
-To add pages, write them into the [pages](pages) folder. 
+To add pages, write them into the [pages](pages) folder.
 You define urls based on the `permalink` attribute in your pages,
 and then add them to the navigation by adding to the content of [_data/toc.yml](_data/toc.yml).
 
@@ -374,7 +372,7 @@ as they do on this page. The tags should be defined like this in the front end
 matter:
 
 ```yaml
-tags: 
+tags:
  - jekyll
  - github
 ```
@@ -387,4 +385,3 @@ spot on the tags page linked above.
 #tag_search_endpoint: https://ask.cyberinfrastructure.org/search?q=
 tag_color: primary # danger, success, warning, primary, info, secondary
 ```
-
