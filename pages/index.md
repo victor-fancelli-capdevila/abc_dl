@@ -1,6 +1,7 @@
 ---
 layout: page
 permalink: /
+lang: en
 ---
 
 # Welcome to Docsy Jekyll

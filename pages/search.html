@@ -4,6 +4,7 @@ sitemap: false
 permalink: /search/
 not_editable: true
 excluded_in_search: true
+lang: en
 ---
 
 <input class="form-control td-search-input" type="search" name="q" id="search-input" placeholder="&#xf002 Search this site…"  style="margin-top:5px" autofocus>
@@ -38,7 +39,7 @@ excluded_in_search: true
 					"{{ post.url | slugify }}": {
 						"id": "{{ post.url | slugify }}",
 						"title": "{{ post.title | xml_escape }}",
-						"version": "all", 
+						"version": "all",
 						"categories": "{{ post.categories | join: ", " | xml_escape }}",
 						"url": " {{ post.url | xml_escape }}",
 						"content": {{ post.content | strip_html | replace_regex: "[\s/\n]+"," " | strip | jsonify }}

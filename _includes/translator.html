@@ -1,0 +1,1 @@
+{{site.url}}{{site.baseurl}}{% if page.lang == "en" %}{% if page.url contains "docs" %}{{page.url | replace: "docs", "docs/de" }}{% else %}{{page.url | replace_fist: "/", "/de"}}{% endif %}{% elsif page.lang == "de" %}{{page.url | replace: "/de/", "/"}}{% endif %}

@@ -2,28 +2,7 @@
 <html lang="en" class="no-js">
   <!-- Copyright 2019-2021 Vanessa Sochat-->
   {% include head.html %}
-  <!-- Versions deactivated
-  {% if site.version_params.versioning == true %}
-    {% assign pageversion = page.url | append: "/"  | replace: '//', '/' | split: '/' %}
-    {% assign currentpageversion = pageversion[3] %}
-    {% comment %}
-      Let's check to see if we have one of the versions in the URL if not then we are on the latest version
-    {% endcomment %}
-      {% if site.version_params.versions contains currentpageversion %}
-        {% assign currentpageversionpath = site.version_params.version_dir | append: '/' | append: pageversion[3] | append: '/' %}
-        {% comment %}
-          Remove the version from the URL to get the latest document url for use in the alerts etc
-        {% endcomment %}
-        {% assign latestversion = page.url | replace: currentpageversionpath, '' %}
-      {% else %}
-        {% comment %}
-          Otherwise we are using the latest version
-        {% endcomment %}
-        {% assign latestversion = page.url %}
-        {% assign currentpageversion = site.version_params.latest %}
-      {% endif %}
-  {% endif %} -->
-  <body class="td-section">
+<body class="td-section">
     {% include header_de.html %}
     <div class="container-fluid td-outer">
       <div class="td-main">
@@ -32,14 +11,17 @@
           {% include sidebar.html %}
           </div>
           <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
-              <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
-                  {% include editable.html %}
-              </div>
               <nav id="TableOfContents"><ul>
               <li><ul id="TOC">
                 <!-- Links will be appended here-->
               </ul></li>
               </ul></nav>
+              <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+                  {% include version-info.html %}
+              </div>
+              <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+                  {% include editable.html %}
+              </div>
           </div>
           <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
             <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">

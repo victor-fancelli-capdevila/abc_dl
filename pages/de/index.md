@@ -2,6 +2,6 @@
 layout: page_de
 title: Docsy Jekyll Theme
 permalink: /de/
-language: de
+lang: de
 ---
 Noch nicht übersetzt

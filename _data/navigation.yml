@@ -1,9 +1,9 @@
 - title: Course
   url: course
   title_de: Kurs
-- title: "Documentation"
+- title: "Documentation<sup>2</sup>"
   url: docs
-  title_de: "Dokumentation"
+  title_de: "Dokumentation<sup>2</sup>"
 - title: "HfG Inftrastructure"
   url: hfg
   title_de: HfG Infrastruktur

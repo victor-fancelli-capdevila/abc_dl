@@ -1,6 +1,7 @@
 ---
 title: News
 permalink: /news/
+lang: en
 ---
 
 # News

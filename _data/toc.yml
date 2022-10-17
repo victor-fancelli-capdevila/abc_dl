@@ -1,8 +1,9 @@
-- title: Documentation
+- title: New at the HfG
   url: docs
   links:
-    - title: "Getting Started"
-      url: "docs/getting-started"
+    - title: "Eduroam"
+      url: "docs/eduroam"
+
       children:
         - title: Features!
           url: "docs/getting-started#getting-started"
@@ -15,7 +16,7 @@
     - title: "News"
       url: "news"
 - title: "Extras"
-  url: "docs/extras"
+
   links:
     - title: Tags Page
       url: "tags"
