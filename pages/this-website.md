@@ -49,7 +49,13 @@ Looking at the versions, we will be able to understand if we have to update the 
 As the things we're documentating are changing constantly, we use date to have a reference on how updated our information is. This is the reason that we change it with every change and sometimes, if the information is still correct and need no further modification, we will just change the date, to say: "yes, it still works!"
 
 ### Images
-Screenshot are really usefull.
+Screenshot are really usefull and help people to understand what they have to do.
+
+### Creating and naming Images
+
+### Uploading images
+
+### Inserting images
 
 # Creating a new page
 What if you want to document something that is not there? You will need another page. For the moment, create a documetn issue (on the right). I will create a link to have new pages.
