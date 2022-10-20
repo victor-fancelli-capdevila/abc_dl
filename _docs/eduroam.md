@@ -25,6 +25,15 @@ More information available information here: [http://accounts.hfg-karlsruhe.de](
 ### Windows (works with Windows 10, probably 11)
  > Windows installation is a bit tricky, but we have this step-by-step guide.
 
+Open the Windows Settings (Einstellungen) of you Computer. Go to Network and Internet (Netzwerk und Internet) and there to WiFi (WLAN).
+
+![Step-1-Einstellungen](https://user-images.githubusercontent.com/116261175/196897447-32368d07-c1f4-4df1-a48a-34832c8b9032.png)
+![Step-2-WLAN](https://user-images.githubusercontent.com/116261175/196897543-8702025c-07eb-408d-b5b2-23e1aff7fb5c.png)
+
+When you klick on Managing known Networks (Bekannte Netzwerke verwalten) a list of network names will appear. Klick on eduroam. Then the option forget (nicht speichern) will show. Klick forget (nicht speichern) to delete eduroam. Don't worry, you'll get it back in a second.
+
+![Step-3-Nicht-Speichern](https://user-images.githubusercontent.com/116261175/196897567-4a0b596d-1ac3-429a-b06c-20e1a5dfedd5.png)
+
 On the Windows Menu (or Windows-key), search for Panel Control (Systemsteuerung), and there click on Network and Internet (Netzwerke und Internet). Now you should see something like:
 
 ![Screenshot of the Network and internet section of Panel control](../assets/img/docs/eduroam-windows-02.png)
