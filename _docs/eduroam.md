@@ -22,12 +22,15 @@ In other words, it's an authentication by which all university members can acces
 ## Installation and configuration
 More information available information here: [http://accounts.hfg-karlsruhe.de](http://accounts.hfg-karlsruhe.de "Accounts website of the HfG") after login in.
 
-### Windows (works with Windows 10, probably 11)
+### Windows 10 & 11
  > Windows installation is a bit tricky, but we have this step-by-step guide.
 
-Open the Windows Settings (Einstellungen) of you Computer. Go to Network and Internet (Netzwerk und Internet) and there to WiFi (WLAN).
-
+Open the Windows Settings (Einstellungen) of you Computer.
 ![Step-1-Einstellungen](https://user-images.githubusercontent.com/116261175/196897447-32368d07-c1f4-4df1-a48a-34832c8b9032.png)
+
+Go to Network and Internet (Netzwerk und Internet) and there to Wi-Fi (WLAN).
+
+
 ![Step-2-WLAN](https://user-images.githubusercontent.com/116261175/196897543-8702025c-07eb-408d-b5b2-23e1aff7fb5c.png)
 
 When you klick on Managing known Networks (Bekannte Netzwerke verwalten) a list of network names will appear. Klick on eduroam. Then the option forget (nicht speichern) will show. Klick forget (nicht speichern) to delete eduroam. Don't worry, you'll get it back in a second.
@@ -40,7 +43,7 @@ On the Windows Menu (or Windows-key), search for Panel Control (Systemsteuerung)
 
 Now click on "Create new connection or new network" (Neue Verbinung oder neues Netzwerk einrichten). This will appear:
 
-![Screenshot of the prompt for creating a new connection, with four options](../assets/img/docs/eduroam-windows-03.png)
+![The window for creating a connection or a network, offering the possibiliy to choose between four options: an arrow signaling the world globe to establish a connection with internet; An arrow pointing a network computer in a pipe, for creating a new Network. The computer in a pipe, but without arrow for creating a manual wi-fi connection; finally an icon of a rack to establish a connection with the workspace. At the bottom on the right, two buttons to continue or cancel the process.](../assets/img/docs/eduroam-windows-03.png)
 
 Yes, all the options seems quite similar, but you want the third one (establish Manual connection to a wireless network?), and hence we selected it. This will appear:
 
