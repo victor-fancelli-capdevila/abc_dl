@@ -16,26 +16,43 @@ According to [eduroam.org](https://eduroam.org/what-is-eduroam/ "Link to eduroam
 > eduroam (education roaming) is the secure, world-wide roaming access service developed for the international research and education community.<br/><br/>
 eduroam allows students, researchers and staff from participating institutions to obtain Internet connectivity across campus and when visiting other participating institutions by simply opening their laptop.
 
-In other words, it's an authentication by which all university members can access Wi-Fi of other universities worldwide. So, if you are travelling, you can go to a university (library) and enjoy free (and fast) Wi-Fi.
+In other words, it's an authentication by which all university members can access Wi-Fi of universities worldwide. So, if you are traveling, you can go to a university (library) and enjoy free (and fast) Wi-Fi.
+
+## eduroam & eduroam-HfG
+
+If you are in the building, your device may detect two Wi-Fi connections:
+
+- **eduroam**
+- **eduroam-hfg**
+
+The reason for that is that ZKM is also offering an internet connection through eduroam, but some people need to know in which of the networks (HfG or ZKM) they are. Other users in the building may not experience any relevant difference between both networks, as they use the same hardware, offer the same speed, etc.
+
+In short:
+> Configure Eduroam (it will allow to connect you inside other institutions). Configure also eduroam-hfg  only if you need to be sure you are connecting to the hfg network.
 
 
 ## Installation and configuration
-More information available information here: [http://accounts.hfg-karlsruhe.de](http://accounts.hfg-karlsruhe.de "Accounts website of the HfG") after login in.
+We took the information from [http://accounts.hfg-karlsruhe.de](http://accounts.hfg-karlsruhe.de "Accounts website of the HfG") after login in.
+
+### Apple (macOS, iOS)
+You can [download this configuration file](https://accounts.hfg-karlsruhe.de/static/eduroam%20-%20HfG%20Karlsruhe%20-%20signed%20until%202025-05-16.mobileconfig) that will do that for you.
+
+You will need to enter your username and password twice (you will configure both eduroam and eduroam-hfg).
 
 ### Windows 10 & 11
  > Windows installation is a bit tricky, but we have this step-by-step guide.
 
 Open the Windows Settings (Einstellungen) of you Computer.
-![Step-1-Einstellungen](https://user-images.githubusercontent.com/116261175/196897447-32368d07-c1f4-4df1-a48a-34832c8b9032.png)
+![Step-1-Einstellungen](../assets/img/docs/eduroam-windows-settings-01.png)
 
 Go to Network and Internet (Netzwerk und Internet) and there to Wi-Fi (WLAN).
 
 
-![Step-2-WLAN](https://user-images.githubusercontent.com/116261175/196897543-8702025c-07eb-408d-b5b2-23e1aff7fb5c.png)
+![Step-2-WLAN](../assets/img/docs/eduroam-windows-wifisettings.png)
 
 When you klick on Managing known Networks (Bekannte Netzwerke verwalten) a list of network names will appear. Klick on eduroam. Then the option forget (nicht speichern) will show. Klick forget (nicht speichern) to delete eduroam. Don't worry, you'll get it back in a second.
 
-![Step-3-Nicht-Speichern](https://user-images.githubusercontent.com/116261175/196897567-4a0b596d-1ac3-429a-b06c-20e1a5dfedd5.png)
+![Step-3-Nicht-Speichern](../assets/img/docs/eduroam-windows-forget-eduroam.png)
 
 On the Windows Menu (or Windows-key), search for Panel Control (Systemsteuerung), and there click on Network and Internet (Netzwerke und Internet). Now you should see something like:
 
@@ -92,3 +109,20 @@ Click ok.
 Now you can go to the wireless symbol in the bar and try to connect normally. It may ask you again log-in and password, and then it should work.
 
 So, congratulations, now you have internet (almost) everywhere!
+
+### GNU/Linux
+
+Go to the Wi-Fi or Network settings (probably just clicking the Wi-Fi Symbl on the panel, selecting the network and then Wi-Fi settings).
+
+In Security, check this parameters:
+| Security | WPA & WPA2 Enterprise |
+| Authenticaton | Tunneled TLS |
+| Anonymous identity | anonymous@hfg-karlsruhe.de |
+| Domain | radius.hfg-karlsruhe.de |
+| CA Certificate | (None), click on the checkbox No CA certificate is required |
+| Inner authentication | PAP |
+| Username | your username (without @hfg-karlsruhe.de) |
+| Password | your password |
+
+Here is how it looks on GNOME:
+![](../assets/img/docs/eduroam-linux.png)
