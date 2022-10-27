@@ -5,10 +5,22 @@ permalink: /docs/
 lang: en
 ---
 
-# Documentation
+# The HfG infrastructure
 
-Welcome to the {{ site.title }} Documentation pages! Here you can quickly jump to a
-particular page.
+There are many digital services that the HfG offers to all the community.
+
+The principal links and log-in data that you will need in a glance:
+
+- Account Management System: Link | Documentation
+- Webmail:  Link | Documentation
+- Nextcloud: Link | Documentation
+- Moodle: Link | Documentation
+- BigBlueButton:  Link | Documentation
+- His1: Link | Docuemntation
+
+---
+
+
 
 <div class="section-index">
     <hr class="panel-line">
