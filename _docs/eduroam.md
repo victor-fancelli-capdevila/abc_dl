@@ -4,13 +4,13 @@ lang: en
 date: 2022-10-18
 version: 0.1
 nav-order: 20
+category: Eduroam
 tags:
   - Wi-Fi
   - Internet
 ---
-# Eduroam
-
-## What is eduroam (and why I need it)?
+{{page-title}}
+# What is eduroam?
 According to [eduroam.org](https://eduroam.org/what-is-eduroam/ "Link to eduroam"):
 
 > eduroam (education roaming) is the secure, world-wide roaming access service developed for the international research and education community.<br/><br/>
@@ -18,7 +18,7 @@ eduroam allows students, researchers and staff from participating institutions t
 
 In other words, it's an authentication by which all university members can access Wi-Fi of universities worldwide. So, if you are traveling, you can go to a university (library) and enjoy free (and fast) Wi-Fi.
 
-## eduroam & eduroam-HfG
+# eduroam in the HfG
 
 If you are in the building, your device may detect two Wi-Fi connections:
 
@@ -31,22 +31,21 @@ In short:
 > Configure Eduroam (it will allow to connect you inside other institutions). Configure also eduroam-hfg  only if you need to be sure you are connecting to the hfg network.
 
 
-## Installation and configuration
+# Configuring Eduroam
 We took the information from [http://accounts.hfg-karlsruhe.de](http://accounts.hfg-karlsruhe.de "Accounts website of the HfG") after login in.
 
-### Apple (macOS, iOS)
+## Apple (macOS, iOS)
 You can [download this configuration file](https://accounts.hfg-karlsruhe.de/static/eduroam%20-%20HfG%20Karlsruhe%20-%20signed%20until%202025-05-16.mobileconfig) that will do that for you.
 
 You will need to enter your username and password twice (you will configure both eduroam and eduroam-hfg).
 
-### Windows 10 & 11
+## Windows 10 & 11
  > Windows installation is a bit tricky, but we have this step-by-step guide.
 
 Open the Windows Settings (Einstellungen) of you Computer.
 ![Step-1-Einstellungen](../assets/img/docs/eduroam-windows-settings-01.png)
 
 Go to Network and Internet (Netzwerk und Internet) and there to Wi-Fi (WLAN).
-
 
 ![Step-2-WLAN](../assets/img/docs/eduroam-windows-wifisettings.png)
 
@@ -115,6 +114,7 @@ So, congratulations, now you have internet (almost) everywhere!
 Go to the Wi-Fi or Network settings (probably just clicking the Wi-Fi Symbl on the panel, selecting the network and then Wi-Fi settings).
 
 In Security, check this parameters:
+
 | Security | WPA & WPA2 Enterprise |
 | Authenticaton | Tunneled TLS |
 | Anonymous identity | anonymous@hfg-karlsruhe.de |
@@ -125,4 +125,5 @@ In Security, check this parameters:
 | Password | your password |
 
 Here is how it looks on GNOME:
+
 ![](../assets/img/docs/eduroam-linux.png)

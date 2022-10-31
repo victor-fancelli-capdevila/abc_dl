@@ -3,9 +3,10 @@ title: E-Mail Encryption
 lang: en
 date: 2022-10-2
 version: 0.1
-nav-order: 35
+category: Mail
+nav-order: 50
 tags:
-  - E-Mail
+  - Email
   - Encryption
   - OpoenPGP
 ---

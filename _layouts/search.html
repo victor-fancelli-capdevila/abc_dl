@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang={% if page.lang == en %}"en"{% elsif page.lang == de %}"de"{% endif %} class="no-js">
+
+{% include head.html %}
+
+<body>
+{% include header.html %}
+<div class="container-fluid td-outer">
+  <div class="td-main">
+    <div class="row flex-xl-nowrap">
+
+
+      <!-- here starts content -->
+      <div class="content-area total">
+        <!-- well, after the content-info-panel -->
+        <div class="content-info-panel">
+          <div class="breadcrumb-and-tags divide-two-col">
+          {% include breadcrumb.html %}
+          {% include tags.html %}
+          </div>
+          {% include version-info.html %}
+          <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+          {% include editable.html %}
+          </div>
+        </div>
+        <hr>
+        <main class="content-area col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+
+
+         <div class="td-content">
+
+
+	      {{ content }}
+              {% if section.links %}<div class="section-index">
+               <hr class="panel-line">{% for child in section.links %}
+                 <div class="entry">
+                    <h5>
+                        <a href="{% if child.url %}{{ site.baseurl }}{{ child.url }}{% else %}{{ child.external_url }}{% endif %}">{{ child.title }}</a>
+                    </h5>
+                    <p>{{ child.description }}</p>
+                 </div>{% endfor %}
+              </div>{% endif %}
+                <!-- Feedback deactivated -->
+            <div class="navbar-nav d-none d-lg-block">
+         </div>
+        </main>
+      </div>
+      </div>
+    </div>
+    {% include footer.html %}
+</div>
+
+</body>
+</html>

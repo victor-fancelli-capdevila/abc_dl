@@ -18,7 +18,7 @@ title: The abc of digital literacy
 email: vfcapdevila@hfg-karlsruhe.de
 author: Víctor Fancelli Capdevila
 description: > # this means to ignore newlines until "baseurl:"
-  The abc of digital literacy is a course.
+  The abc of digital literacy was a course on digitaltity at the HfG but is also a small repository with useful information about HfG digital infrastructure.
 
 # Add your baseurl here (your repository) but DO NOT CHANGE THE LINE NUMBER without editing .circleci/circle_urls.sh
 baseurl: "/abc_dl" # the subpath of your site, e.g. /blog
@@ -31,11 +31,6 @@ repo: "https://github.com/victor-fancelli-capdevila/abc_dl"
 github_user: "victor-fancelli-capdevila"
 github_repo: "abc_dl"
 github_branch: "main"
-
-# Optional
-# twitter: vsoch
-# linkedin: vsochat
-# dockerhub: vanessa
 
 # These options are used to configure the locations of your version history when you want to serve versioned documents
 version_params:
@@ -74,7 +69,7 @@ tag_color: primary # danger, success, warning, primary, info, secondary
 
 fixedNav: false # true or false
 
-permalink: /:year/:title/
+permalink: :title/
 markdown: kramdown
 exclude: [_site, CHANGELOG.md, LICENSE, README.md, vendor]
 
@@ -91,13 +86,13 @@ defaults:
       path: "_docs"
       type: "docs"
     values:
-      layout: page
+      layout: docs
   -
     scope:
-      path: ""
+      path: "pages"
       type: "pages"
     values:
-      layout: "page"
+      layout: page
   -
     scope:
       path: "posts/en"
