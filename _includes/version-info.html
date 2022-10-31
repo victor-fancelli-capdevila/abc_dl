@@ -1,4 +1,15 @@
-<p><b>Version</b>: {{page.version}}</p>
-<p><b>Last update</b>: {% if page.lang == "en" %}{{page.date | date_to_string: "ordinal", "US"}}{% else %}{{page.date | date_to_string }}</p>{% endif %}
-{% if page.lang == "en" %}<p>en</p>{% else %}<p>de {% endif%}
-<a href="{% include translator.html %}">{% include translator.html %}</a>
+<div class="version-info divide-two-col">
+  <div class="version-this">
+    <p><b>This version</b>: {{page.version}}<br/>
+    <b>Language</b>: {{page.lang}}<br/>
+    <b>Last update</b>: {% if page.lang == "en" %}{{page.date | date_to_string: "ordinal", "US"}}{% else %}{{page.date | date_to_string }}{% endif %}{% if page.lang == "en" %}en{% else %}de {% endif%}
+    </p>
+  </div>
+  <div class="version-that">
+    <p><a href="{% include translator.html %}" aria-label="Go to the other version">German version</a><br/>
+    </p>
+
+    {% if page.lang == "en" %}{% if page.url contains "docs" %}{{page.url | replace: "docs", "docs/de" }}{% else %}{{page.url | replace_fist: "/", "/de"}}{% endif %}{% elsif page.lang == "de" %}{{page.url | replace: "/de/", "/"}}{% endif %}
+
+  </div>
+</div>

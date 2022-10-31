@@ -1,8 +1,12 @@
 ---
-layout: page
-title: Documentation
+layout: docs
+title: HfG infrastructure
 permalink: /docs/
 lang: en
+version: 0.1
+tags:
+  - Getting-started
+  - Account
 ---
 
 # The HfG infrastructure
@@ -17,10 +21,6 @@ The principal links and log-in data that you will need in a glance:
 - Moodle: Link | Documentation
 - BigBlueButton:  Link | Documentation
 - His1: Link | Docuemntation
-
----
-
-
 
 <div class="section-index">
     <hr class="panel-line">

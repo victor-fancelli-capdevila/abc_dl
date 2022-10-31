@@ -1,0 +1,16 @@
+---
+layout: empty
+---
+[
+  {% for page in site.docs %}
+{
+
+      "title"    : "{{ page.title | escape }}",
+      "url"      : "{{ site.baseurl }}{{ page.url }}",
+      "tags"     : "{{ page.tags | join: ', ' }}",
+      "lang"     : "{{page.lang | join: ', '}}",
+      "description" : "{{page.description}}"
+
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

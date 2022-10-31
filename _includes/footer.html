@@ -1,21 +1,15 @@
-<footer class="bg-dark py-5 row d-print-none">
-  <div class="container-fluid mx-sm-5">
-    <div class="row">
-      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
-      </div>
-
-      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
-        <ul class="list-inline mb-0">
-        <li>{% if site.privacy %}<p><a href="{{ site.privacy }}" target="_blank">Imprint</a></p>{% endif %}</li>
-        </ul>
-      </div>
-
-      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
-         <small class="text-white"><p>Texts are licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0</p>
-           <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></small>
-
+<!-- The footer -->
+<footer>
+  <hr>
+  <div class="footer-container">
+      <div class="footer-col" style="display:inline-flex; align-items: center">
+        <img alt="The Creative Commons License logo, consisting in a rectangle with cc inside a white circle followed by three other smaller circles: the silhouette of a person with BY written at the bottom; a forbidden dolar sign over NC and an arrow making a circumference with SA" style="border-width:0" src="{{site.baseurl}}/assets/img/cc-by-nc-sa.png" /><p>Texts and images are licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;" aria-label="Read more about Creative commons CC BY-NC-SA">CC BY-NC-SA 4.0</p>
 
       </div>
-    </div>
+
+      <div class="footer-col imprint" style="display:inline-flex; align-items: center">
+        <p><a href="{{ site.privacy }}" target="_blank">Imprint</a></p>
+      </div>
   </div>
+
 </footer>

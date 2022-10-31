@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: default
 permalink: /
 lang: en
+nav_exclude: true
 ---
 
 # Welcome to _The abc of Digital Literacy_
@@ -14,3 +15,4 @@ This site is many things at the same time, we hope you don't get confused:
 
 
 ## Contributors:
+Víctor Fancelli Capdevila

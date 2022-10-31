@@ -4,6 +4,7 @@ lang: en
 date: 2022-10-18
 version: 0.1
 nav-order: 30
+category: HfG-Cloud
 tags:
   - Cloud
   - Nextcloud

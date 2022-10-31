@@ -1,105 +1,49 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-  <!-- Copyright 2019-2021 Vanessa Sochat-->
-  {% include head.html %}
-  <!-- Versions deactivated
-  {% if site.version_params.versioning == true %}
-    {% assign pageversion = page.url | append: "/"  | replace: '//', '/' | split: '/' %}
-    {% assign currentpageversion = pageversion[3] %}
-    {% comment %}
-      Let's check to see if we have one of the versions in the URL if not then we are on the latest version
-    {% endcomment %}
-      {% if site.version_params.versions contains currentpageversion %}
-        {% assign currentpageversionpath = site.version_params.version_dir | append: '/' | append: pageversion[3] | append: '/' %}
-        {% comment %}
-          Remove the version from the URL to get the latest document url for use in the alerts etc
-        {% endcomment %}
-        {% assign latestversion = page.url | replace: currentpageversionpath, '' %}
-      {% else %}
-        {% comment %}
-          Otherwise we are using the latest version
-        {% endcomment %}
-        {% assign latestversion = page.url %}
-        {% assign currentpageversion = site.version_params.latest %}
-      {% endif %}
-  {% endif %} -->
-  <body class="td-section">
-    {% include header.html %}
-    <div class="container-fluid td-outer">
-      <div class="td-main">
-        <div class="row flex-xl-nowrap">
-          <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
-          {% include sidebar.html %}
+<html lang="{% if page.lang %}{{page.lang}}{% else %}en{% endif %}">
+{% include head.html %}
+
+<body>
+{% include header.html %}
+
+<div class="general-container">
+      <!--search -->
+      {% include search.html %}
+      <div class="sidebar-and-content">
+        {% include sidebar.html %}
+
+        <!-- here starts content -->
+        <div class="content-panel">
+          <!-- well, after the content-info-panel -->
+          <div class="content-info-panel">
+            <div class="breadcrumb-and-tags divide-two-col">
+            {% include breadcrumb.html %}
+            {% include tags.html %}
+            </div>
+            {% include version-info.html %}
+            <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+            {% include editable.html %}
+            </div>
           </div>
-          <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
-            <nav id="TableOfContents"><ul>
-            <li><ul id="TOC">
-              <!-- Links will be appended here-->
-            </ul></li>
-            </ul></nav>
-            <hr>
-
-                {% include version-info.html %}
-
-            <hr>
-              <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
-                  {% include editable.html %}
-              </div>
-
-          </div>
-          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
-            <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
-	      <ol class="breadcrumb spb-1">
-              {% assign crumbs = page.url | append: "/"  | replace: '//', '/' | split: '/' %}
-              {% for crumb in crumbs offset: 1 %}
-                {% if crumb != "index" %}
-                  {% if forloop.last %}
-                    <li class="breadcrumb-item active" aria-current="page">
-                      <a href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
-                    </li>
-                  {% else %}
-                    {% if page.url != "/docs/" %}
-                      {% if site.version_params.versioning == true and crumb == currentpageversion or crumb == site.version_params.version_dir %}
-                      <!-- Don't display the version number or directory in the breadcrumb -->
-                      {% else %}
-                      <li class="breadcrumb-item">
-                        <a href="{{ site.url }}{{ site.baseurl }}{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{% if crumb == "docs" %}Documentation{% else %}{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}{% endif %}</a>
-                      </li>
-                      {% endif %}
-                    {% endif %}
-                  {% endif %}
-                {% endif %}
-              {% endfor %}
-	      </ol>
-           </nav>
-           <div class="td-content">
-            {% if site.version_params.versioning == true %}
-              {% if site.version_params.latest != currentpageversion %}
-              {% capture civersion %}
-                {{- currentpageversion | downcase | strip -}}
-              {% endcapture %}
-                {% include versionalert.html %}
-              {% endif %}
-            {% endif %}
-
-	      {{ content }}
-              {% if section.links %}<div class="section-index">
-               <hr class="panel-line">{% for child in section.links %}
-                 <div class="entry">
-                    <h5>
-                        <a href="{% if child.url %}{{ site.baseurl }}{{ child.url }}{% else %}{{ child.external_url }}{% endif %}">{{ child.title }}</a>
-                    </h5>
-                    <p>{{ child.description }}</p>
-                 </div>{% endfor %}
+          <hr>
+          <main class="content-area col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            <div class="td-content">
+    	      {{ content }}
+            {% if section.links %}
+            <div class="section-index">
+            <hr class="panel-line">{% for child in section.links %}
+                    <div class="entry">
+                      <h5>
+                          <a href="{% if child.url %}{{ site.baseurl }}{{ child.url }}{% else %}{{ child.external_url }}{% endif %}">{{ child.title }}</a>
+                      </h5>
+                      <p>{{ child.description }}</p>
+                    </div>{% endfor %}
               </div>{% endif %}
-                <!-- Feedback deactivated -->
-              <div class="navbar-nav d-none d-lg-block">
-           </div>
+            </div>
+            {% include footer.html %}
           </main>
+
         </div>
       </div>
-      {% include footer.html %}
-    </div>
-    {% include scripts.html %}
-  </body>
+</div>
+</body>
 </html>
