@@ -83,7 +83,7 @@ header {
     padding-top: 0.5em;
 }
 .sidebar-and-content{
-   display: inline-flex;
+   display: inline-list-item;
 }
 
 /* Sidebar */
@@ -94,6 +94,7 @@ header {
   display: block;
   min-width: 25%;
   position: fixed;
+  max-width: 32%;
 }
 
 .sidebar ul {
