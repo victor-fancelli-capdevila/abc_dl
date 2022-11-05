@@ -8,18 +8,15 @@ nav_exclude: true
 
 # Imprint
 
-Víctor Fancelli Capdevila
-
-Winterstraße, 25
-
-76137 Karlsruhe
-
-Phone: +49015224802420
-
+Víctor Fancelli Capdevila<br/>
+Winterstraße, 25<br/>
+76137 Karlsruhe<br/>
+Phone: +49015224802420<br/>
 E-Mail: vfcapdevila@hfg-karlsruhe.de
 
 
-> This is a translation of the [German Impressum]({{site.baseurl}}/de/imprint}}), for information purposes only. Although every effort has been made to make the translation as accurate as possible, the legal interpretation of this translation could generate misunderstandings. Should this be the case, we encourage you to write to us to correct the translation and urge, in case of conflict, to take the original German document as a reference.
+> This is a translation of the [German Impressum]({{site.baseurl}}/de/imprint), for information purposes only. Although every effort has been made to make the translation as accurate as possible, the legal interpretation of this translation could generate misunderstandings. Should this be the case, we encourage you to write to us to correct the translation and urge, in case of conflict, to take the original German document as a reference.
+
 ## Notice according to the Online Dispute Resolution Regulation
 
 Under applicable law, we are obliged to inform consumers of the existence of the European Online Dispute Resolution platform, which can be used to resolve disputes without having to go to court. The European Commission is responsible for setting up the platform. The European Online Dispute Resolution Platform can be found here: [http://ec.europa.eu/odr](http://ec.europa.eu/odr). Our email is: vfcapdevila@hfg-karlsruhe.de
@@ -39,5 +36,5 @@ The content published on this website is subject to German copyright and ancilla
 
 The display of this website in external frames is only permitted with written permission.
 
-## § 4 Special terms of use
+### § 4 Special terms of use
 Insofar as special conditions for individual uses of this website deviate from the aforementioned paragraphs, this will be expressly pointed out at the appropriate place. In this case, the special terms of use apply in each individual case.

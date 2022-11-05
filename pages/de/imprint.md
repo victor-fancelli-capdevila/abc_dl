@@ -8,10 +8,10 @@ nav_exclude: true
 
 # Impressum
 
-Víctor Fancelli Capdevila
-Winterstraße, 25
-76137 Karlsruhe
-Telefon: +49015224802420
+Víctor Fancelli Capdevila<br/>
+Winterstraße, 25<br/>
+76137 Karlsruhe<br/>
+Telefon: +49015224802420<br/>
 E-Mail: vfcapdevila@hfg-karlsruhe.de
 
 ## Hinweis gemäß Online-Streitbeilegungs-Verordnung
@@ -33,5 +33,5 @@ Die auf dieser Website veröffentlichten Inhalte unterliegen dem deutschen Urheb
 
 Die Darstellung dieser Website in fremden Frames ist nur mit schriftlicher Erlaubnis zulässig.
 
-## § 4 Besondere Nutzungsbedingungen
+### § 4 Besondere Nutzungsbedingungen
 Soweit besondere Bedingungen für einzelne Nutzungen dieser Website von den vorgenannten Paragraphen abweichen, wird an entsprechender Stelle ausdrücklich darauf hingewiesen. In diesem Falle gelten im jeweiligen Einzelfall die besonderen Nutzungsbedingungen
