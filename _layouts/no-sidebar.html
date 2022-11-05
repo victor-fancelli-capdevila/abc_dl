@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="{% if page.lang %}{{page.lang}}{% else %}en{% endif %}">
+{% include head.html %}
+
+<body>
+{% include header.html %}
+
+<div class="general-container">
+      <!--search -->
+      {% include search.html %}
+      <div class="sidebar-and-content">
+        
+
+        <!-- here starts content -->
+        <div class="content-panel">
+          <!-- well, after the content-info-panel -->
+          <div class="content-info-panel">
+            <div class="breadcrumb-and-tags divide-two-col">
+            {% include breadcrumb.html %}
+            {% include tags.html %}
+            </div>
+            {% include version-info.html %}
+            <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+            {% include editable.html %}
+            </div>
+          </div>
+          <hr>
+          <main class="content-area col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            <div class="td-content">
+    	      {{ content }}
+            {% if section.links %}
+            <div class="section-index">
+            <hr class="panel-line">{% for child in section.links %}
+                    <div class="entry">
+                      <h5>
+                          <a href="{% if child.url %}{{ site.baseurl }}{{ child.url }}{% else %}{{ child.external_url }}{% endif %}">{{ child.title }}</a>
+                      </h5>
+                      <p>{{ child.description }}</p>
+                    </div>{% endfor %}
+              </div>{% endif %}
+            </div>
+            {% include footer.html %}
+          </main>
+
+        </div>
+      </div>
+</div>
+</body>
+</html>
