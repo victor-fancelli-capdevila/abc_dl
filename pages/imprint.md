@@ -9,10 +9,15 @@ nav_exclude: true
 # Imprint
 
 Víctor Fancelli Capdevila
+
 Winterstraße, 25
+
 76137 Karlsruhe
+
 Phone: +49015224802420
+
 E-Mail: vfcapdevila@hfg-karlsruhe.de
+
 
 > This is a translation of the [German Impressum]({{site.baseurl}}/de/imprint}}), for information purposes only. Although every effort has been made to make the translation as accurate as possible, the legal interpretation of this translation could generate misunderstandings. Should this be the case, we encourage you to write to us to correct the translation and urge, in case of conflict, to take the original German document as a reference.
 ## Notice according to the Online Dispute Resolution Regulation
