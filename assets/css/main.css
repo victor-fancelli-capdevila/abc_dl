@@ -67,7 +67,7 @@ header {
 }
 
 .navbar ul {
-	align-items: center;
+	align-items: baseline;
 }
 
 /* Page-division */
@@ -95,6 +95,7 @@ header {
   min-width: 25%;
   position: fixed;
   max-width: 32%;
+  overflow-y: scroll;
 }
 
 .sidebar ul {
@@ -142,6 +143,7 @@ footer .footer-col{
 /* Content */
 .content-panel{
   margin-left: 33%;
+  width: 50%;
 }
 
 /* content info-panel */
@@ -220,4 +222,32 @@ p{
 
 table{
   width:100%;
+}
+
+
+.hidden {
+  display: none;
+}
+
+/* Skip to main content */
+#skip a
+{
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+
+#skip a:focus
+{
+position:static;
+width:auto;
+height:auto;
+}
+
+/* scrollbars */
+::-webkit-scrollbar {
+  width: 10px;
 }

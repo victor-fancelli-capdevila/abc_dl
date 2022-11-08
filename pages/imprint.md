@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: no-sidebar
 title: Imprint
 permalink: /imprint/
 lang: en

@@ -9,11 +9,22 @@
       <!--search -->
       {% include search.html %}
       <div class="sidebar-and-content">
-                <!-- here starts content -->
-        <div class="content-panel no-sidebar">
+        {% include sidebar-as-toc.html %}
 
-
-
+        <!-- here starts content -->
+        <div class="content-panel">
+          <!-- well, after the content-info-panel -->
+          <div class="content-info-panel">
+            <div class="breadcrumb-and-tags divide-two-col">
+            {% include breadcrumb.html %}
+            {% include tags.html %}
+            </div>
+            {% include version-info.html %}
+            <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+            {% include editable.html %}
+            </div>
+          </div>
+          <hr>
           <main class="content-area col-12 col-md-9 col-xl-8 pl-md-5" role="main">
             <div class="td-content">
     	      {{ content }}
@@ -27,21 +38,10 @@
                       <p>{{ child.description }}</p>
                     </div>{% endfor %}
               </div>{% endif %}
-              <!-- well, after the content-info-panel -->
-                <hr>
-              <div class="content-info-panel">
-                <div class="breadcrumb-and-tags divide-two-col">
-                {% include breadcrumb.html %}
-                {% include tags.html %}
-                </div>
-                {% include version-info.html %}
-                <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
-                {% include editable.html %}
-                </div>
             </div>
             {% include footer.html %}
           </main>
-          </div>
+
         </div>
       </div>
 </div>

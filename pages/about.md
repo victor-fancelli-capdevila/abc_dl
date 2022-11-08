@@ -1,10 +1,12 @@
 ---
-layout: page
+layout: sidebar-as-toc
 title: About
 permalink: /about/
 lang: en
-nav_exclude: true
+version: 0.1
+date: 2022-11-05
 ---
+
 # About
 
 This website was created as part of the materials of the course "The abc of Digital Literacy" which took place in the Karlsruhe University of Arts and Design during the Winter semester 22/23 and is available to everyone: even if the infrastructure of a small university near the black forest may not be not so interesting, we wanted to share our approach in teaching digital tools, digital competence and digital literacy.
@@ -37,3 +39,6 @@ Again, this is not a question... Where did you find the mistake? Can you correct
 Even if we would love to write perfectly in any language, we make mistakes, or sometimes we don't express ourselves with enough clarity. We hope that what we're trying to say is more interesting than the mistakes we're doing.
 
 In opposition to other text, we are doing a documentation and hence we refuse the notion of author (and we talk of contributors): we are open to any change that can make the text better. That also means that text are in constant development, which means that, if you want to quote any of our texts, you may find something different the next time you're visiting this site.
+
+{% include toc.html %}
+{% include permalinks.html %}
