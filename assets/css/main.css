@@ -95,7 +95,6 @@ header {
   min-width: 25%;
   position: fixed;
   max-width: 32%;
-  overflow-y: scroll;
 }
 
 .sidebar ul {
