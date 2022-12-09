@@ -96,15 +96,15 @@ Please check that everything is correct
 
 Click on Ok, after the configuration. Small yeah! We still need a couple of things. So, we're back in the Security tab:
 
-![We had previously met this image: Screenshot of the properties of the eduroam-hfg wireless connection, this time with focus on the security tab. Two dropdown fields: Type of security (WPA2-Enterprise) and Type of encryption (AES). After, a message ask to select a Method for network authentication, again with a drop-down field and the Microsoft: EAP-TTLS is selected. Next to it there is a button for configuration and under it the checkbox is selected, indicating that we want to save the log-in information for every future access of this connection. Then there is another button for advanced configuration. At the bottom of the window, two buttons for Ok and Cancel.]({site.baseurl}/assets/img/docs/eduroam-windows-06.png)
+![We had previously met this image: Screenshot of the properties of the eduroam-hfg wireless connection, this time with focus on the security tab. Two dropdown fields: Type of security (WPA2-Enterprise) and Type of encryption (AES). After, a message ask to select a Method for network authentication, again with a drop-down field and the Microsoft: EAP-TTLS is selected. Next to it there is a button for configuration and under it the checkbox is selected, indicating that we want to save the log-in information for every future access of this connection. Then there is another button for advanced configuration. At the bottom of the window, two buttons for Ok and Cancel.]({{site.baseurl}}/assets/img/docs/eduroam-windows-06.png)
 
 and we want to click in Advanced Options:
 
-![German Screenshot of the advanced options, with two tabs, 8021x-Settings and 802.11-Settings (the first selected). Frame with a selected checkbox for the authentication mode: with User authentication selected in a drop dropdown menu. After this, a button for saving the Log-in information, and a deactivated checkbox for deleting the log-in information for all users. A second frame, leaded by a checkbox "one-time log-in for this network" is unchecked and everything is deactivated. At the end, two buttons: Ok and cancel.]({site.baseurl}/assets/img/docs/eduroam-windows-08.png)
+![German Screenshot of the advanced options, with two tabs, 8021x-Settings and 802.11-Settings (the first selected). Frame with a selected checkbox for the authentication mode: with User authentication selected in a drop dropdown menu. After this, a button for saving the Log-in information, and a deactivated checkbox for deleting the log-in information for all users. A second frame, leaded by a checkbox "one-time log-in for this network" is unchecked and everything is deactivated. At the end, two buttons: Ok and cancel.]({{site.baseurl}}/assets/img/docs/eduroam-windows-08.png)
 
 Here, you want to have the first checkbox activated, and select User-Authentication. Then click on the button after it, "Save Log-in information", this will happen:
 
-![A gray window to save the log-in information, this time we're back to Windows 10 aesthetics! Two text-field: the first one for the username and the second one for the password. Then our classical two buttons: Ok and cancel.]({site.baseurl}/assets/img/docs/eduroam-windows-09.png)
+![A gray window to save the log-in information, this time we're back to Windows 10 aesthetics! Two text-field: the first one for the username and the second one for the password. Then our classical two buttons: Ok and cancel.]({{site.baseurl}}/assets/img/docs/eduroam-windows-09.png)
 
 - **Login**: your username (everything before @hfg-karlsruhe.de)
 - **Password**: the E-Mail password.

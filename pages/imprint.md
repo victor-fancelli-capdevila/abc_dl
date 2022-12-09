@@ -40,6 +40,7 @@ The display of this website in external frames is only permitted with written pe
 Insofar as special conditions for individual uses of this website deviate from the aforementioned paragraphs, this will be expressly pointed out at the appropriate place. In this case, the special terms of use apply in each individual case.
 
 <hr>
+
 # Privacy Policy
 
 > A Privacy policy is a legal document in which we describes how we process data, especially personal data. In Germany, as part of the EU, it's regulated by [GDPR](https://gdpr-info.eu). Even if our aim is not to store or process personal data information, we may need to do it, hence our privacy policy. "Personal data" is defined as "any information relating to an identified or identifiable natural person (‘data subject’)" (Art. 4.1) and "processing" as "any operation or set of operations which is performed on personal data or on sets of personal data, whether or not by automated means, such as collection, recording, organisation, structuring, storage, adaptation or alteration, retrieval, consultation, use, disclosure by transmission, dissemination or otherwise making available, alignment or combination, restriction, erasure or destruction" (Art. 4.2).
