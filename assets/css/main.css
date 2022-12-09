@@ -95,7 +95,6 @@ header {
   min-width: 25%;
   position: fixed;
   max-width: 32%;
-  overflow-y: scroll;
 }
 
 .sidebar ul {
@@ -105,7 +104,6 @@ header {
 .sidebar li{
     list-style-type: none;
     padding-bottom:1%;
-    text-transform: uppercase;
     text-decoration: none;
 }
 
@@ -185,7 +183,7 @@ footer .footer-col{
 /* post-content */
 
 main img {
-  max-width: 75%;
+  max-width: 90%;
   text-align: center;
 }
 
