@@ -9,13 +9,26 @@ tags:
   - Cloud
   - Nextcloud
   - Sharing
+  - Groupware
 ---
-# The cloud of the HfG
+
+| [Project](https://nextcloud.com/) | [Software](https://github.com/nextcloud/) | [User manual](https://docs.nextcloud.com/server/latest/user_manual/en/) |
+
+# What is the cloud of the HfG
 
 In [cloud.hfg-karlsruhe.de](cloud.hfg-karlsruhe.de) you will find the instance of Nextcloud for the HfG, also known as the HfG-Cloud. In their website they describe Nextcloud as follows:
+
 > Nextcloud offers a modern, on-premises content collaboration platform with real-time document editing, video chat & groupware on mobile, desktop and web.
 
 In other words, it is the software to share files and develop collaborative projects.
+
+The HfG Cloud integrates different platforms such as:
+* Email client
+* File sharing
+* Groups management
+* Chat services
+* Calendars and Tasklists
+
 
 ## Difference between Nextcloud and Moodle
 Both Nextcloud and Moodle are mature, extended Open Source / Free Software projects with a big community behind them and lot of modules or plug-ins. The main difference is their approach: while Moodle hat the classroom context in mind, Nextcloud is project oriented. It's not impossible to develop a project in Moodle or a classroom in Nextcloud, but that was not the goal they have in mind when they develop it. Moodle for example differentiates clearly between teacher and student role, allowing students to enroll in courses and teachers to grade or give feedback on assigned tasks.
@@ -36,13 +49,3 @@ You can think of Nextcloud as the institutional approved (which means privacy po
 There is also a second reason to avoid this software and it's the support and responsibility related to it: our IT is responabile for mantain this infrastructure and will help you gladly if you have any problem, and taking the responsability in case of something going wrong. Depending on the plan you have, you will get better or worse support and (you will need to check the Terms and conditions) no responsability on what you are doing.
 
 If your main reason to use this software is that is "really easy to manage", "i just have an icon over there and everything get synchonized" you should continue reading: Nextcloud has a web interface but also also a client you can install.
-
-# Log-in
-Go to [cloud.hfg-karlsruhe.de](cloud.hfg-karlsruhe.de) and log-in with:
-- full Email **with @hfg-karlsruhe.de**
--your password
-
-
-# The Nextlcoud client
-
-So you want to have an icon up there and that everything get sync? Nextcloud-client is what you need.

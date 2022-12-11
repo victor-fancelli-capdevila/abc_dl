@@ -1,11 +1,11 @@
 <div class="version-info divide-two-col">
-  <div class="version-this">
+  <div class="version-this" style="display:none">
     <p><b>This version</b>: {{page.version}}<br/>
     <b>Language</b>: {{page.lang}}<br/>
     <b>Last update</b>: {% if page.lang == "en" %}{{page.date | date_to_string: "ordinal", "US"}}{% else %}{{page.date | date_to_string }}{% endif %}
     </p>
   </div>
-  <div class="version-that">
+  <div class="version-that" style="display:none">
     <p><a href="{% include translator.html %}" aria-label="Go to the other version">German version</a><br/>
     </p>
 
