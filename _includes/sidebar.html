@@ -14,11 +14,13 @@
       {% for item in sortedpages %}
         {% assign postitems = item | split: '#' %}
         {% assign thisurl = postitems[0] | split: '!' %}
-        {% if thisurl[1] == page.url %}
-        <li class="active sidebar-first-level"><a href="{{site.baseurl}}{{ thisurl[1] }}">{{postitems [1]}}</a></li>
-        <ul id="TOC"></ul>
+        {% if thisurl[1] == null %}
+        {% continue %}
+        {% elsif thisurl[1] == page.url %}
+        <li class="active sidebar-first-level"><a href="{{site.baseurl}}{{ thisurl[1] }}" aria-label="{{postitems [1]}}">{{postitems [1]}}</a></li>
+        <li><ul id="TOC"></ul></li>
         {% else %}
-        <li class="sidebar-first-level"><a href="{{site.baseurl}}{{ thisurl[1] }}">{{postitems [1]}}</a></li>
+        <li class="sidebar-first-level"><a href="{{site.baseurl}}{{ thisurl[1] }}" aria-label="{{postitems [1]}}">{{postitems [1]}}</a></li>
         {% endif %}
       {% endfor %}
     </ul>

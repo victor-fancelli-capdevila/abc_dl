@@ -3,6 +3,7 @@
 {% include head.html %}
 
 <body>
+<div id="skip"><a href="#content">{% if page.lang == "de"%}Direkt zum Inhalt springen{% else %}Skip to main content{% endif %}</a></div>
 {% include header.html %}
 
 <div class="general-container">
@@ -25,7 +26,7 @@
             </div>
           </div>
           <hr>
-          <main class="content-area col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+          <main id= maincontent" class="content-area col-12 col-md-9 col-xl-8 pl-md-5" role="main">
             <div class="td-content">
     	      {{ content }}
             {% if section.links %}

@@ -10,16 +10,19 @@ tags:
   - Email
   - Webmail
 ---
-# Accessing the HfG Email
-
-There are different ways of accessing your E-Mail at the HfG:
+There are different ways of accessing your E-Mail at the HfG: Through horde, Nextcloud and an Email-Client
 <!-- more -->
 
 ## Through Horde
-Go to [webmail.hfg-karlsruhe.de](https://webmail.hfg-karlsruhe.de) an log in with your username (without @hfg-kalrsruhe.de) and password. For a long time (you can see that in the interface), this has been the main access to E-Mail for the HfG commnity, so lot of people may refer to this Webmail when they speak of "Mail of the HfG". One of the main advantages is that the configuration is made out of the box, and you only need some tuning.
+Go to [webmail.hfg-karlsruhe.de](https://webmail.hfg-karlsruhe.de) and log in with your username (without @hfg-kalrsruhe.de) and password.
+For a long time (you can see that in the interface), this has been the main access to E-Mail for the HfG community, so a lot of people may refer to this Webmail when they speak as the "Mail of the HfG".
+
+![Screenshot of the webmail login panel: a white rounded rectangle over a gray background. There are two text fields (username and password) and two dropdown fields: Mode which is set in automatic and Language which is set in English (American). After that a black login button with a locker next to it.]({{site.baseurl}}/assets/img/docs/mail-horde-login.png)
+
+
 
 ## Through HfG-Cloud
-Go to [cloud.hfg-karlsruhe.de](https://cloud.hfg-karlsruhe.de) an log in with username **with @hfg-karlsruhe.de** and password. This is the Mail integrated in the cloud, and that is it's main advantage (that you have it together with shared calendars and files). One of the main advantages is that the configuration is made out of the box, and you only need some tuning.
+Go to [cloud.hfg-karlsruhe.de](https://cloud.hfg-karlsruhe.de) and log in with username **with @hfg-karlsruhe.de** and password. This is the Mail integrated in the cloud, and that is its main advantage (that you have it together with shared calendars and files). One of the main advantages is that the configuration is made out of the box, and you only need some tuning.
 
 ## Through an E-Mail Client
 
