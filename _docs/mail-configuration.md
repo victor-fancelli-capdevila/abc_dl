@@ -13,7 +13,7 @@ tags:
 ---
 
 # Configuring an Email-Client
-Once you installed the Mail client, you may need to configure it. Sometimes, writing your name and E-Mail everything works fine, but here the configuration data if you need it:
+Once you installed the Mail client, you may need to configure it. So try, to put your name, your email and maybe you're lucky. If not, here is the manual configutation:
 
 | |Incoming Server | Outgoing server | What's that? |
 | :--- | :---: | :---: | ---: |
@@ -46,14 +46,13 @@ yourmail@hfg-karlsruhe.de
 Yes, it seems wired but you write your Email in a E-Mail Signature. That is related to a time when people was printing E-Mails. Of course, you can modify it as you will. Some people may use a signature with HTML and, for example an image on it: this may cause incompatibilities, but your signature is completely up to you.
 
 
-## Extra Configuration
-
-### Calendars & tasks
-Location 	https://cloud.hfg-karlsruhe.de/remote.php/dav/calendars/username@hfg-karlsruhe.de
-
-Put your password in prompt
+## Calendars & tasks
+If you're working in an email client, you probably want to have your calendar in it too. Ye've been documenting it [in  Synchonizing Calendars](./hfg-cloud-calendar-synch)
 
 ### Address book
+You can add the Adress Book of HfG Cloud following the same method.
+
+The HfG-Cloud is not the best source to have all the addresses of the HfG. At the moment it is the LDAP, which can only be acessed from the HfG Network.
 
 
 ## Filters
