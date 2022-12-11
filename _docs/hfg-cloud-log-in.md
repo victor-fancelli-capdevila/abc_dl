@@ -62,8 +62,11 @@ You can create a password just for your app. A really long and complicated one: 
 
 1. With your browser, go to your account in Nextcloud, log in and click on your profile photo or the letter in the top right of the menu.
 2. On the panel on the left, select security.
-3. Focus on Devices and sessions: Here are listed all the connections (devices or apps) to your account. If you see lot of strange things, that may be a clue that someone is accessing your account. To do that, click on the three points on the right, a select revoke.
+3. Focus on Devices and sessions: Here are listed all the connections (devices or apps) to your account. If you see lot of strange things, that may be a clue that someone is accessing your account. To do that, click on the trash bin or the three points on the right, and then select revoke.
+![](https://docs.nextcloud.com/server/25/user_manual/_images/settings_devices.png)
 4. Below them, at the bottom, you will see a field where you can write in which you can read App name and a "Create new app password" Button.
+
+![](https://docs.nextcloud.com/server/25/user_manual/_images/settings_devices_add.png)
 
 Yes, just write something that help you identify the app or device you are giving permission ("My phone","home-computer","work-computer") and click on the button. It may ask your password. After that, under the  button a username and a password field will appear, giving you the possibility of copying it (clicking in the icon between the password and done). What's even cooler, after the password you have a small text: "Show QR code for mobile apps". After clicking, a QR code will appear.
 

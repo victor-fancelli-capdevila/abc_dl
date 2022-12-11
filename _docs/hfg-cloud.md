@@ -14,7 +14,7 @@ tags:
 
 | [Project](https://nextcloud.com/) | [Software](https://github.com/nextcloud/) | [User manual](https://docs.nextcloud.com/server/latest/user_manual/en/) |
 
-# The cloud of the HfG
+# What is the cloud of the HfG
 
 In [cloud.hfg-karlsruhe.de](cloud.hfg-karlsruhe.de) you will find the instance of Nextcloud for the HfG, also known as the HfG-Cloud. In their website they describe Nextcloud as follows:
 

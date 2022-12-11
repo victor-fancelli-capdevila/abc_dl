@@ -9,15 +9,15 @@ tags:
   - Cloud
   - Calendar
 ---
+# Calendars
 
-Calendars of the HfG cloud allow to create, configure and share a calendar with other people (and allow them to see and or to edit them). But they actually allow to do a lot of other things, some of them you probably don't know. In this page, we will focus on managing calendars and events, but check some extra features of calenders:
+Calendars of the HfG cloud allow to create, configure and share a calendar with other people (and allow them to see and or to edit them). But they actually allow to do a lot of other things, some of them you probably don't know.
 
-* **[Managing calendars](#managing-your-calendars)**
+The [documentation on Nextcloud](https://docs.nextcloud.com/server/latest/user_manual/en/groupware/calendar.html#create-a-new-calendar) is agood source and make our job really easier. So we are copying and editing it (stand: December 2022): that's the good part of Creative Commons Public License. Let's first have an overview on the basics:
 
-The [documentation on Nextcloud](https://docs.nextcloud.com/server/latest/user_manual/en/groupware/calendar.html#create-a-new-calendar) is agood source. So we are copying and editing it (stand: December 2022): that's the good part of Creative Commons Public License. Let's first have an overview:
-
-1. Managing your calendars
-2. Managing Events
+* **[Managing calendars](#managing-your-calendars)**: where we explain how to create, share, publish, subscribe, import and export or delete a calendar.
+* **[Managing Events or Meetings](#managing-events-or-meetings)**: where we explain the difference between an event (only one participant) and a meeting (more participants) and how to create, manage, set up reminders and make them recurring.
+* **[Working with an E-Mail Client]()**: Here we guide you to configure your Thunderbird, Applemail or smatphone so that you don't miss any appointment.
 
 Here some cool features you had probably though "The HfG chould have an app for that":
 
