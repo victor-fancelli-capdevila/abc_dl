@@ -132,7 +132,17 @@ After a long reflection, we decided, as the Information page we consulted, to pu
 <button onclick="makeTransparent()">Make it transparent</button>
 
 <script>
+// Create a commutator to activate or deactivate transparency
+var com = 0;
 function makeTransparent() {
-document.getElementsByClassName("td-content")[0].setAttribute("style","color:transparent;");
+  // Activate transparency
+  if (com == 0) {
+    document.getElementsByClassName("td-content")[0].setAttribute("style","color:transparent;");
+    com = 1;
+  // deactivate if it's already active
+  } else {
+    document.getElementsByClassName("td-content")[0].setAttribute("style","color:black;");
+    com = 0;
+  };
 }
 </script>
