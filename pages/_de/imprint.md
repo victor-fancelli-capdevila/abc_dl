@@ -1,7 +1,7 @@
 ---
 layout: no-sidebar
 title: Imprint
-permalink: /de/imprint/
+permalink: /_de/imprint/
 lang: de
 nav_exclude: true
 ---

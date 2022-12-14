@@ -1,10 +1,22 @@
 - title: HfG-Account
   title_de: HfG Konto
+  hasparents: orphan
 - title: Eduroam
   title_de: Eduroam
+  hasparents: orphan
 - title: Mail
   title_de: E-Mail
+  hasparents: orphan
 - title: HfG-Cloud
   title_de: HfG-Cloud
+  hasparents: orphan
+  haschildren: indeed
+- title: Calendar
+  title_de: Kalendar
+  hasparents: HfG-Cloud
+- title: BigBlueButton
+  title_de: BigBlueButton
+  hasparents: orphan
 - title: Moodle
   title_de: Moodle
+  hasparents: orphan

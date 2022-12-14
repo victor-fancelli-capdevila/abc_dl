@@ -1,11 +1,45 @@
 <div class="sidebar">
   <!-- a little bit tricky: first we check for category, then we fill it-->
 <nav>
+  <ul>
+
   {% for category in site.data.docs-categories %}
+    <!-- check if it has parents -->
+    {% if category.hasparents == "orphan"%}
+    <li>{{category.title}} </li>
     <ul>
+    {% capture items %}
+    {% for item in site.docs %}
+      {% if category.title == item.category %}
+      |{{ item.nav-order }}!{{ item.url }}#{{ item.title }}
+      {% endif %}
+    {% endfor %}
+    {% endcapture %}
+    {% assign sortedpages = items | split: '|' | sort %}
+    {% for item in sortedpages %}
+      {% assign postitems = item | split: '#' %}
+      {% assign thisurl = postitems[0] | split: '!' %}
+      {% if thisurl[1] == null %}
+      {% continue %}
+      {% elsif thisurl[1] == page.url %}
+      <li class="active sidebar-first-level"><a href="{{site.baseurl}}{{ thisurl[1] }}" aria-label="{{postitems [1]}}">{{postitems [1]}}</a></li>
+      <li><ul id="TOC"></ul></li>
+      {% else %}
+      <li class="sidebar-first-level"><a href="{{site.baseurl}}{{ thisurl[1] }}" aria-label="{{postitems [1]}}">{{postitems [1]}}</a></li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+    {% endif %}
+    <!-- Now check if it has children -->
+    {% if category.haschildren == "indeed" %}
+    <ul>
+      {% for subcategory in site.data.docs-categories %}
+      {% if subcategory.hasparents == category.title %}
+      <li>{{subcategory.title}}</li>
+      <ul>
       {% capture items %}
       {% for item in site.docs %}
-        {% if category.title == item.category %}
+        {% if subcategory.title == item.category %}
         |{{ item.nav-order }}!{{ item.url }}#{{ item.title }}
         {% endif %}
       {% endfor %}
@@ -23,7 +57,14 @@
         <li class="sidebar-first-level"><a href="{{site.baseurl}}{{ thisurl[1] }}" aria-label="{{postitems [1]}}">{{postitems [1]}}</a></li>
         {% endif %}
       {% endfor %}
+      </ul>
+
+
+      {% endif %}
+      {% endfor %}
     </ul>
+    {% endif %}
   {% endfor %}
+</ul>
 </nav>
 </div>

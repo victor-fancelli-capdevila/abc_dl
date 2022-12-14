@@ -1,0 +1,12 @@
+<div class="sidebar">
+  <!-- a little bit tricky: first we check for category, then we fill it-->
+<nav>
+  <ul>
+  {% for category in site.data.docs-categories %}
+hola
+    <li>{{category.parent}} -- {{category.title}}</li>
+
+  {% endfor %}
+</ul>
+</nav>
+</div>

@@ -50,6 +50,7 @@ header {
   background: white;
   top: 0px;
   width:99%;
+  z-index: 1;
 }
 .navbar {
   display: inline-flex;
@@ -93,7 +94,7 @@ header {
   font-size: 1.2em;
   display: block;
   min-width: 25%;
-  position: fixed;
+  position: absolute;
   max-width: 32%;
 }
 
