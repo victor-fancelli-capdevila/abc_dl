@@ -8,28 +8,12 @@
 {% endfor %}
 <hr>
 <h1>Concepts</h1>
-
-  {% for category in site.data.docs-categories %}
-    <ul>
-      {% capture items %}
-      {% for item in site.posts %}
-        {% if category.title == item.category %}
-        |{{ item.nav-order }}!{{ item.url }}#{{ item.title }}
-        {% endif %}
-      {% endfor %}
-      {% endcapture %}
-      {% assign sortedpages = items | split: '|' | sort %}
-      {% for item in sortedpages %}
-        {% assign postitems = item | split: '#' %}
-        {% assign thisurl = postitems[0] | split: '!' %}
-        {% if thisurl[1] == page.url %}
-        <li class="active sidebar-first-level"><a href="{{site.baseurl}}{{ thisurl[1] }}">{{postitems [1]}}</a></li>
-        <ul id="TOC"></ul>
-        {% else %}
-        <li class="sidebar-first-level"><a href="{{site.baseurl}}{{ thisurl[1] }}">{{postitems [1]}}</a></li>
-        {% endif %}
-      {% endfor %}
+<!-- provisional solution -->
+  <ul>
+    <li class="sidebar-first-level"><a href="{{site.baseurl}}/on-this-course/">Course, presentation of this</a></li>
+    <li class="sidebar-first-level"><a href="{{site.baseurl}}/Digital-literacy/">Literacy, Digital<br/>(vs Competence, Digital)</a></li>
+    <li class="sidebar-first-level"><a href="{{site.baseurl}}/Website/">Website, How To</a></li>
     </ul>
-  {% endfor %}
+
 </nav>
 </div>

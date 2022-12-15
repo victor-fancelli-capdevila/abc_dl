@@ -9,6 +9,7 @@ tags:
   - Email
   - Email Lists
 ---
+# E-Mail Lists
 > An Email list is simply a list of Email addresses under a name. You can send an E-Mail to different E-Mail addresses or save them in an E-Mail list, which will prevent forgetting to send the Email to someone.
 
 You can create your own Email-List and save it on your address book, or you can use the public Email Lists provided by the HfG.

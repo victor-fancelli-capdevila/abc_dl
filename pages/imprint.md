@@ -104,7 +104,7 @@ Yes, there are some rights we would like to reserve (one never knows what will h
 
 § 2 The authors and contributors of this website are explicitly allowed to perform the acts detailed in § 1 even if it's not on November 3rd as long as one of the conditions is meet: a) there is a full moon; b) there is an agreement between all participants to move the day of the ritual; c) someone had a tough day d) none of the above.
 
-§ 3 The authors and contributors of this website want to make explicit their refusal to Minuet in general, even for acts described on § 1. Nonetheless, if for whatever reason they consider acceptable other types of music as iambic, gigues, sarabands or reggaeton pieces are not fitting their mood, they explicitly reserve the right to exceptionally allow Minuets, wigs and false warts during the celebration of the acts in § 1.  
+§ 3 The authors and contributors of this website want to make explicit their refusal to Minuet in general, even for acts described on § 1. Nonetheless, if, for whatever reason they consider that other types of music acceptable as (but not limited to) iambic, gigues, sarabands or reggaeton pieces are not fitting their mood, they explicitly reserve the right to exceptionally allow minuets, wigs and false warts during the celebration of the acts described in § 1.  
 
 
 # By the way, some rights provided by GDPR

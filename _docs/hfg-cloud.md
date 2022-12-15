@@ -1,5 +1,5 @@
 ---
-title: HfG-Cloud
+title: What is the cloud of the HfG
 lang: en
 date: 2022-10-18
 version: 0.1

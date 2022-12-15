@@ -1,7 +1,7 @@
 ---
-title: "Course presentation"
+title: "Course, presentation of this"
 date: 2022-10-16 10:00
-categories: session0
+category: concept
 version: 0.1
 lang: en
 tags:

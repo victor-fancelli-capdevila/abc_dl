@@ -177,7 +177,7 @@ footer .footer-col{
 }
 
 .tags-bar {
-  display: contents;
+  display: grid;
 }
 
 .version-that {

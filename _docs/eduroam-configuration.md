@@ -1,5 +1,5 @@
 ---
-title: Eduroam
+title: Configuring Eduroam
 lang: en
 date: 2022-10-18
 version: 0.1
@@ -9,26 +9,6 @@ tags:
   - Wi-Fi
   - Internet
 ---
-{{page-title}}
-# What is eduroam?
-According to [eduroam.org](https://eduroam.org/what-is-eduroam/ "Link to eduroam.org website"):
-
-> eduroam (education roaming) is the secure, world-wide roaming access service developed for the international research and education community.<br/><br/>
-eduroam allows students, researchers and staff from participating institutions to obtain Internet connectivity across campus and when visiting other participating institutions by simply opening their laptop.
-
-In other words, it's an authentication by which all university members can access Wi-Fi of universities worldwide. So, if you are traveling, you can go to a university (library) and enjoy free (and fast) Wi-Fi.
-# eduroam in the HfG
-
-If you are in the building, your device may detect two Wi-Fi connections:
-
-- **eduroam**
-- **eduroam-hfg**
-
-The reason for this two eduroams is that ZKM is also offering an internet connection through eduroam, but some people need to know in which of the networks (HfG or ZKM) they are. Other users in the building may not experience any relevant difference between both networks, as they use the same hardware, offer the same speed, etc.
-
-In short:
-> Configure Eduroam (it will allow connecting into other institutions). Configure also eduroam-hfg  only if you need to be sure you are connecting to the hfg network.
-
 
 # Configuring Eduroam
 We took the information from [http://accounts.hfg-karlsruhe.de](http://accounts.hfg-karlsruhe.de "Accounts website of the HfG") after login in.
@@ -131,4 +111,4 @@ In Security, check these parameters:
 
 Here is how it looks on GNOME:
 
-![A black window in English with the title "Wi-Fi Authentication Required". Next to the sign of the point with three waves, a text tells that password or encryption keys are required to access the eduroam-hfg Wi-Fi. After that, a form: Wi-Fi Security is a dropdown menu and WPA & WPA2 Enterprise is selected; Authentication, also a dropdown is Tunneled TLS. Anonymous identity is a text field and "anonymous@hfg-karlsruhe.de" is written; Domain, also a text field, is "radius.hfg-karlsruhe". The next two fields (CA certificate and CA certificate password) are deactivated, as well as the show passwords checkbox. The next checkbox, No CA certificate is required, is selected. The inner authentication, again a dropdown menu is PAP; username and password, both text field, appear with username and password; after that the "Show password" checkbox is activated. At the end of the windows, two buttons: Cancel and Connect.]({site.baseurl}/assets/img/docs/eduroam-linux.png)
+![A black window in English with the title "Wi-Fi Authentication Required". Next to the sign of the point with three waves, a text tells that password or encryption keys are required to access the eduroam-hfg Wi-Fi. After that, a form: Wi-Fi Security is a dropdown menu and WPA & WPA2 Enterprise is selected; Authentication, also a dropdown is Tunneled TLS. Anonymous identity is a text field and "anonymous@hfg-karlsruhe.de" is written; Domain, also a text field, is "radius.hfg-karlsruhe". The next two fields (CA certificate and CA certificate password) are deactivated, as well as the show passwords checkbox. The next checkbox, No CA certificate is required, is selected. The inner authentication, again a dropdown menu is PAP; username and password, both text field, appear with username and password; after that the "Show password" checkbox is activated. At the end of the windows, two buttons: Cancel and Connect.]({{site.baseurl}}/assets/img/docs/eduroam-linux.png)

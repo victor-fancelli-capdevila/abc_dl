@@ -92,7 +92,7 @@ defaults:
       layout: page
   -
     scope:
-      path: "posts/en"
+      path: "posts"
       type: "posts"
     values:
       layout: "post"

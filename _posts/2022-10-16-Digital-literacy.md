@@ -1,7 +1,7 @@
 ---
 title:  "Literacy, Digital (vs Competence, Digital)"
 date:   2022-10-16 09:52:21
-categories: Concepts
+category: Concepts
 tags:
   - Competence, Digital
   - Literacy, Digital

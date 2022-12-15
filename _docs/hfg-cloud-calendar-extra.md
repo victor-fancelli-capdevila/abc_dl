@@ -1,5 +1,5 @@
 ---
-title: Extra things of Calendarr
+title: Extra things of Calendar
 lang: en
 date: 2022-12-09
 version: 0.1
