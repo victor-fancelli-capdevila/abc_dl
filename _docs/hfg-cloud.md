@@ -10,6 +10,9 @@ tags:
   - Nextcloud
   - Sharing
   - Groupware
+  - Dropbox
+  - GoogleDrive
+  - OneDrive
 ---
 
 | [Project](https://nextcloud.com/) | [Software](https://github.com/nextcloud/) | [User manual](https://docs.nextcloud.com/server/latest/user_manual/en/) |
